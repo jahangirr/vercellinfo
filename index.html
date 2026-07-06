@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dialog Example</title>
+</head>
+<body>
+  <button id="openDialog">Open Dialog</button>
+
+  <dialog id="myDialog">
+    <p>This is a dialog box!</p>
+    <button id="closeDialog">Close</button>
+  </dialog>
+
+  <script>
+    const dialog = document.getElementById('myDialog');
+    document.getElementById('openDialog').onclick = () => dialog.showModal();
+    document.getElementById('closeDialog').onclick = () => dialog.close();
+  </script>
+</body>
+</html>
